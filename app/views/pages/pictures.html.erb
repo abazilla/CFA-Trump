@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="flex">
+      
+    <% @images.each do |pic, caption| %>
+        <div class="post">
+            <div class="image">
+                <img src="<%=pic%>" alt="<%=caption%>" class="main">
+            </div>
+            <div class="text">
+                <p><span class="glyphicon glyphicon-heart" aria-hidden="true"></span> Likes   
+                    <span class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></span> Comment
+                </p>
+                <p class="subtitle"><%=caption%></p>
+            </div>
+        </div>
+    <% end %>
+      
+
+    </div>
+</div>
